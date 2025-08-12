@@ -1,0 +1,26 @@
+{
+  "bindings": [
+
+    
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["post"],
+      "route": "ride_predictor"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "type": "eventHub",
+      "direction": "out",
+      "name": "output_event",
+      "eventHubName": "ride-predictions",
+      "connection": "EVENT_HUB_SEND_CONN_STR"  
+    }
+  ]
+}

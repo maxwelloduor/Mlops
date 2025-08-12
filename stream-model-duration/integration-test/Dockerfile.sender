@@ -1,0 +1,10 @@
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY send_event.py .
+COPY payload.json .
+
+RUN pip install azure-eventhub
+
+CMD ["python", "send_event.py"]

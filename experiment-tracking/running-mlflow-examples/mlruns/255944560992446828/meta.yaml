@@ -1,0 +1,6 @@
+artifact_location: file:///home/oduorri/mlops-zoomcamp/mlops-zoomcamp/02-experiment-tracking/running-mlflow-examples/mlruns/255944560992446828
+creation_time: 1750170472701
+experiment_id: '255944560992446828'
+last_update_time: 1750170472701
+lifecycle_stage: active
+name: my-experiment-1

@@ -1,0 +1,22 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "event",
+      "type": "eventHubTrigger",
+      "direction": "in",
+      "connection": "EVENT_HUB_CONNECTION_STR",
+      "eventHubName": "ride-input",
+      "consumerGroup": "$Default",
+      "cardinality": "one",
+      "dataType": "string"
+    },
+    {
+      "name": "output_event",
+      "type": "eventHub",
+      "direction": "out",
+      "connection": "EVENT_HUB_SEND_CONN_STR",
+      "eventHubName": "ride-predictions"
+    }
+  ]
+}
